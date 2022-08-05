@@ -27,7 +27,7 @@ public class CameraMover : MonoBehaviour
     void Update() {
       float x_Camera = t_Camera.position.x; // Finds Camera Position
       float x_Player = t_Player.position.x; // Finds Player Position
-      if(x_Player > x_Camera - x_Offset) t_Camera.position = new Vector2(x_Player + x_Offset, t_Camera.position.y); // Moves Camera
+      if(x_Player > x_Camera - x_Offset) t_Camera.position = new Vector3(x_Player + x_Offset, t_Camera.position.y, t_Camera.position.z); // Moves Camera
 
     }
 
